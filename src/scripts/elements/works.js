@@ -4,7 +4,13 @@ class WorksElement extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = `<div class="work-container">
+    this.innerHTML = `
+    <section class="work section-padding" id="work">
+    <div class="section-title section-title--left">
+      <h1 class="section-title__name bell-fonts">our work</h1>
+      <div class="section-title__underline"></div>
+    </div>
+    <div class="work-container">
     <!-- single work item -->
     <article class="work-item item-1">
       <img src="images/work-1.jpeg" alt="" class="work-item__img">
@@ -84,7 +90,8 @@ class WorksElement extends HTMLElement {
     <div class="work-modal__close">
       <i class="fas fa-window-close"></i>
     </div>
-  </div>`;
+  </div>
+  </section>`;
   }
 }
 

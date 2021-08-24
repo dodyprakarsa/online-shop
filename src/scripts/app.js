@@ -110,7 +110,7 @@ UI.prototype.addCustomer = function (customer) {
   const random = Math.floor(Math.random() * images.length);
   const div = document.createElement('div');
   div.classList.add('person');
-  div.innerHTML = `<img src="img/person-${random}.jpeg" alt="person" class="person__thumbnail">
+  div.innerHTML = `<img src="images/person-${random}.jpeg" alt="person" class="person__thumbnail">
             <h4 class="person__name">${customer.name}</h4>
             <h4 class="person__last-name">${customer.lastname}</h4>`;
   document.querySelector('.drink-card__list').appendChild(div);
@@ -133,7 +133,7 @@ UI.prototype.showModal = function (event) {
     const modalItem = document.querySelector('.work-modal__item');
 
     modal.classList.add('work-modal--show');
-    modalItem.style.backgroundImage = `url(img/work-${id}.jpeg)`;
+    modalItem.style.backgroundImage = `url(images/work-${id}.jpeg)`;
   }
 };
 // hide modal

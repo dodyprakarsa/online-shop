@@ -490,7 +490,7 @@ transform: scale(1)
   position: fixed;
   font-size: 3rem;
   color: var(--brightYellow);
-  bottom: 5%;
+  top: 5%;
   right: 5%;
   transition: color 0.5s linear;
   cursor: pointer;
